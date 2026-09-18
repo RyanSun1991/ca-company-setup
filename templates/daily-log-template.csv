@@ -1,0 +1,3 @@
+date,hours,category,product_release,task,output,result_metric,notes
+{{YYYY-MM-DD}},1.0,C2,{{Product}},Read product overview and privacy policy; drafted QA charter outline,qa/charter.md (draft),—,Onboarding day
+{{YYYY-MM-DD}},2.0,C1,{{Product x.y.z}},Installed TestFlight build {{n}}; baseline smoke test of core flows,TC-001..012,12/12 pass,—

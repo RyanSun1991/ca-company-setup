@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>{{COMPANY_LEGAL_NAME}} Letterhead</title>
+<style>
+@page{size:letter;margin:0}
+body{margin:0;font-family:{{BRAND_FONT}},sans-serif;color:#101726}
+.page{width:8.5in;height:11in;position:relative;padding:0.9in 1in;box-sizing:border-box}
+.head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2.5px solid {{BRAND_DARK}};padding-bottom:0.28in;margin-bottom:0.5in}
+.brand img,.brand svg{height:0.34in;width:auto;display:block}
+.brand .sub{font-size:7.5pt;letter-spacing:0.5em;color:#8891A6;margin-top:8px}
+.co{font-size:8.5pt;text-align:right;color:#5A6172;line-height:1.75}
+.co b{color:#101726}
+.body{font-size:10.5pt;line-height:1.8;color:#2A3140;min-height:7in}
+.foot{position:absolute;bottom:0.6in;left:1in;right:1in;border-top:1px solid #E5E3DE;padding-top:0.16in;display:flex;justify-content:space-between;font-size:7.5pt;color:#9AA0AD}
+</style></head><body><div class="page">
+<div class="head">
+  <div class="brand"><img src="{{WORDMARK_SVG_PATH}}" alt="{{BRAND}}"><div class="sub">{{BRAND_SUBTITLE}}</div></div>
+  <div class="co"><b>{{COMPANY_LEGAL_NAME}}</b><br>{{REGISTERED_ADDRESS_LINE_1}}<br>{{REGISTERED_ADDRESS_LINE_2}}<br>hello@{{DOMAIN}} · {{DOMAIN}}</div>
+</div>
+<div class="body">
+  <p>[Date]</p>
+  <p>[Recipient]</p>
+  <p>Dear —,</p>
+  <p><br></p>
+  <p>Sincerely,</p>
+  <p style="margin-top:0.6in"><b>{{FOUNDER_NAME}}</b><br>President &amp; Chief Executive Officer</p>
+</div>
+<div class="foot"><span>{{COMPANY_LEGAL_NAME}} · Incorporated in Ontario, Canada</span><span>{{DOMAIN}}</span></div>
+</div></body></html>

@@ -1,0 +1,2 @@
+version,rc_build,test_scope,cases_run,pass_rate,open_defects_at_go,go_nogo,decision_date,release_date,crash_free_7d,rating_7d,notes
+{{x.y.z}},{{build}},regression v1 + onboarding,45,97.8%,S3:1,GO,{{YYYY-MM-DD}},{{YYYY-MM-DD}},,,

@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Employment and Signing Authority Verification</title>
+<style>
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#0A1120;margin:0;padding:56px 64px;font-size:12.5pt;line-height:1.5}
+.head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid {{BRAND_ACCENT}};padding-bottom:14px;margin-bottom:28px}
+.brand{font-size:20pt;font-weight:700;letter-spacing:.5px}.brand small{display:block;font-size:9pt;font-weight:500;color:{{BRAND_ACCENT}};letter-spacing:3px}
+.addr{font-size:9.5pt;text-align:right;color:#444;line-height:1.4}
+h1{font-size:15pt;margin:0 0 18px}
+table{border-collapse:collapse;margin:14px 0 20px;font-size:11.5pt}td{padding:5px 14px 5px 0;vertical-align:top}td:first-child{color:#555;width:210px}
+.sig{margin-top:44px}.line{border-top:1px solid #0A1120;width:300px;margin-top:56px;padding-top:6px;font-size:11pt}
+.foot{margin-top:40px;font-size:9pt;color:#666;border-top:1px solid #ddd;padding-top:10px}
+</style></head><body>
+<div class="head"><div class="brand">{{COMPANY_LEGAL_NAME}}<small>{{CITY}} · CANADA</small></div>
+<div class="addr">{{REGISTERED_ADDRESS_LINE_1}}<br>{{REGISTERED_ADDRESS_LINE_2}}<br>{{COMPANY_PHONE}} · hello@{{DOMAIN}}<br>{{DOMAIN}}</div></div>
+<p>{{DATE_LONG}}</p>
+<p>To: Apple Developer Program Support<br>Re: Apple Developer Program enrollment ID <strong>{{ENROLLMENT_ID}}</strong> (case {{CASE_NUMBER}})</p>
+<h1>Employment and Signing Authority Verification</h1>
+<p>This letter confirms that <strong>{{FOUNDER_NAME_TITLECASE}}</strong> is engaged by <strong>{{COMPANY_LEGAL_NAME}}</strong> (the "Corporation") in the following capacities, and that he/she has the legal authority to bind the Corporation to the Apple Developer Program License Agreement and related agreements.</p>
+<table>
+<tr><td>Legal entity</td><td>{{COMPANY_LEGAL_NAME}}, a corporation incorporated under the <em>Business Corporations Act</em> (Ontario) on {{INC_DATE}} (Ontario Corporation Number {{OCN}})</td></tr>
+<tr><td>Registered office</td><td>{{REGISTERED_ADDRESS}}</td></tr>
+<tr><td>Business Number (CRA)</td><td>{{BN}}</td></tr>
+<tr><td>D-U-N-S Number</td><td>{{DUNS}}</td></tr>
+<tr><td>Individual</td><td>{{FOUNDER_NAME_TITLECASE}}</td></tr>
+<tr><td>Positions held</td><td>Founder; sole Director (since incorporation, {{INC_DATE}}); President and Chief Executive Officer (appointed by resolution of the director dated {{INC_DATE}})</td></tr>
+<tr><td>Ownership</td><td>Sole shareholder (100% of the issued common shares)</td></tr>
+<tr><td>Work email / phone</td><td>{{founder}}@{{DOMAIN}} · {{COMPANY_PHONE}}</td></tr>
+<tr><td>Signing authority</td><td>As sole director and President, {{FOUNDER_NAME_TITLECASE}} is authorized to sign contracts and legal agreements on behalf of the Corporation, including agreements with Apple Inc. and its affiliates.</td></tr>
+</table>
+<p>The Articles of Incorporation and Certificate of Incorporation issued by the Ontario Business Registry, which name {{FOUNDER_NAME_TITLECASE}} as the first director, are provided with this letter. The Corporation's register of directors and officers is maintained at the registered office and is available on request.</p>
+<p>I certify that the information above is true and correct.</p>
+<div class="sig"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:20pt;margin-bottom:-40px">/s/ {{FOUNDER_NAME_TITLECASE}}</div><div class="line"><strong>{{FOUNDER_NAME_TITLECASE}}</strong><br>Sole Director, President &amp; Chief Executive Officer<br>{{COMPANY_LEGAL_NAME}}<br>Signed electronically on {{DATE_LONG}}</div></div>
+<div class="foot">{{COMPANY_LEGAL_NAME}} · Ontario Corporation Number {{OCN}} · Business Number {{BN}} · D-U-N-S {{DUNS}}</div>
+</body></html>

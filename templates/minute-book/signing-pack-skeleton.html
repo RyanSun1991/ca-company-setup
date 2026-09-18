@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{COMPANY_LEGAL_NAME}} — Signing Package {{DATE}}</title>
+<style>
+  @page { size: letter; margin: 20mm 20mm; }
+  html,body { margin:0; padding:0; background:#fff; color:#111; }
+  body { font-family: Georgia, "Times New Roman", serif; font-size: 10.5pt; line-height: 1.4; }
+  .doc { page-break-after: always; max-width: 172mm; margin: 0 auto; }
+  .doc:last-child { page-break-after: auto; }
+  h1 { font-size: 14.5pt; text-align: center; letter-spacing: .04em; margin: 0 0 3pt; }
+  .subtitle { text-align: center; font-size: 10.5pt; margin: 0 0 12pt; }
+  h2 { font-size: 10.5pt; margin: 7pt 0 2.5pt; page-break-after: avoid; break-after: avoid; }
+  p { margin: 3.8pt 0; text-align: justify; }
+  table { border-collapse: collapse; margin: 7pt auto; page-break-inside: avoid; }
+  th, td { border: 1px solid #333; padding: 3.5pt 12pt; font-size: 10.5pt; }
+  .sig-block { margin-top: 12pt; page-break-inside: avoid; break-inside: avoid; }
+  .sig-line { border-bottom: 1px solid #111; width: 240px; height: 24pt; margin-bottom: 3pt; }
+  .sig-name { font-weight: bold; }
+  .keep { page-break-inside: avoid; break-inside: avoid; }
+  .cert { border: 3px double #111; padding: 12mm 10mm; text-align: center; }
+  /* 签署说明:屏幕可见,打印隐藏;clean 版把 .note 与 .screen-note 全部删除 */
+  .note { font-size: 9.5pt; color:#333; border:1px solid #999; padding:6pt 8pt; margin-bottom:10pt; background:#f7f7f5; }
+  .screen-note { background:#fffbe6; border:1px solid #e6d87a; padding:10px 14px; font-family: -apple-system, sans-serif; font-size: 13px; max-width: 172mm; margin: 12px auto; line-height:1.6; }
+  @media print { .screen-note { display:none; } }
+</style>
+</head>
+<body>
+
+<div class="screen-note">🖨️ <b>打印说明</b>:Cmd+P → Letter → 默认边距 → 关闭页眉页脚。共 <b>{{N}} 份文件</b>自动分页。<br>
+✍️ <b>签字共 {{K}} 处,分两晚</b>:今晚只签纯董事身份 {{…}};股本入账后按序签交割 {{…}}(IP 协议执行日期手写)。</div>
+
+<!-- ============ DOC 1 ============ -->
+<div class="doc">
+  <div class="note">签署说明:{{日期怎么填、签几处、归档去向}}(clean 版删除本框)</div>
+  <h1>{{Document Title}}</h1>
+  <p class="subtitle">{{COMPANY_LEGAL_NAME}} (the "Corporation")</p>
+  <h2>1. …</h2>
+  <p>…</p>
+  <div class="sig-block">
+    <p><b>Dated</b> effective {{DATE}}.</p>
+    <div class="sig-line"></div>
+    <div class="sig-name">{{FOUNDER_NAME}}</div>
+    <div>sole Director</div>
+  </div>
+</div>
+
+<!-- ============ DOC 2 … ============ -->
+
+</body>
+</html>
